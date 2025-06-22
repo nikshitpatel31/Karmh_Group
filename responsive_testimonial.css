@@ -1,0 +1,122 @@
+/*
+Template: Architeck - Construction HTML5 Template
+Author: peacefulqode.com
+Version: 1.0
+Design and Developed by: Peaceful Qode
+
+*/
+@media(max-width:1699px) {
+	.pt-big-title .pt-big-title1 { font-size: 6em }
+	.pt-sidebar {
+    padding: 60px 45px 30px;
+}
+}
+@media(max-width:1365px) {
+	.icon-box-content .icon-box-title { font-size: 20px; }
+	.about-img-0 { max-width: 100%; }
+	.owl-carousel .pt-blog-post .pt-blog-contain .pt-blog-title { font-size: 22px; }
+	footer#pt-footer { font-size: 14px; }
+	#pt-footer .pt-footer-style-1 .pt-footer-logo { height: 30px; }
+}
+@media(max-width:1199px) {
+	section { position: relative; padding: 90px 0px; }
+	.container { max-width: 960px; }
+	.pt-section-big-title .big-heading-title { font-size: 5em; line-height: 1.5; margin-top: -15px; }
+	.pt-big-title .pt-big-title1 { font-size: 5em; }
+	.pt-section-title-box .pt-section-title { font-size: 38px; line-height: 1; }
+	.pt-counter-top { margin-top: -90px; }
+	.pt-circle { margin-top: -90px; }
+	.circle-progress .pt-circle-progress { position: relative; display: flex; padding: 30px 60px; }
+	.circle-progress { position: relative; margin-top: 0px; }
+	.image-box-content { margin-left: -18%; }
+	.icon-box-icon1 { margin-top: 90px; }
+	.icon-box-icon3 {margin-top: -25px;}
+	.pt-counter-contain { margin-top: 30px; }
+	.backgrount-image-right { left: 50%; }
+	.pt-testimonial.pt-testimonial-1 .owl-carousel .owl-nav { top: -38%; }
+	.pt-subscribe-from { position: relative; margin-top: 15px; }
+	.pt-section-overlap { margin-top: -100px; }
+	.progress-outer2 {margin-bottom:0px;
+    z-index: 9;}
+}
+@media(max-width:1023px) {
+	figure { height: auto; margin: 0; width: 100%; }
+	section { position: relative; padding: 60px 0; }
+	.pt-big-title .pt-big-title1 { display: inline-block; }
+	.container { max-width: 100%; }
+	footer#pt-footer { font-size: 16px; }
+	.pt-subscribe-block { margin-bottom: 30px; }
+	#pt-footer .pt-footer-style-1  .pt-copyright-footer .row { -ms-flex-direction: row-reverse !important; flex-direction: row-reverse !important; }
+	.content-area .site-main { padding: 90px 0; }
+	.pt-testimonial.pt-testimonial-1 .owl-carousel .owl-nav { position: relative; top: 0; margin-top: 30px; }
+	.pt-portfolio-block .pt-portfolio-img { margin-top: 0 !important; }
+	.counter.single-counter1 { right: 50px; }
+	#pt-footer .pt-copyright-footer { margin-top: 30px; }
+	.counter.single-counter1 { padding: 30px 30px; }
+}
+@media(max-width:980px) {
+	.pt-section-overlap { margin-top: 60px; }
+	.process-img { position: absolute; bottom: 0; right: -33%; }
+	#pt-footer .pt-footer1 .footer-title { margin-top: auto; }
+	.about-img-block .about-img { max-width: 100%; }
+	.pt-footer1-menu.pt-footer1 { margin-top: 30px; }
+	.pt-footer2 { margin-top: 30px; }
+	.pt-section-big-title .big-heading-title { font-size: 3em; line-height: 1.9; }
+}
+@media(max-width:767px) {
+	.icon-box-icon1 { margin-top: 30px; }
+	.pt-big-title { display: none; }
+	.pt-big-title .pt-big-title1 { font-size: 4em; }
+	.about-img-block .about-img-2 { display: none; }
+	.pt-process-step.pt-process-1 .pt-process-number { font-size: 80px; }
+	.pt-section-title-box .pt-section-title { font-size: 35px; line-height: 1.5; }
+	.process-img { display: none; }
+	.image-box-content { margin-left: -35px; margin-top: 25px; }
+	#pt-footer .pt-footer1 .footer-title { margin-top: 45px; }
+	.pt-footer2 { margin-top: 30px; }
+	#pt-footer .pt-copyright-footer { margin: 30px 0px; }
+	.about-img-block .about-img-1 { max-width: 100%; }
+	.pq-big-title .pq-big-title1 { display: none; }
+	.section-style:before { display: none; }
+	.section-style:after { display: none; }
+	.pt-section-description br { display: none; }
+	.pt-blog-post .pt-blog-contain { padding: 15px; }
+	#pt-loading img { width: 280px; }
+	#pt-footer .pt-footer-style-1 .pt-copyright-footer .text-right { text-align: center !important; }
+	#pt-footer .pt-footer-style-1 .pt-copyright-footer .pt-copyright { padding: 15px 0; display: inline-block; width: 100%; }
+	.pt-footer-social { text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+	.pt-footer-social ul li { float: none; display: inline-block; }
+	.process-img { position: absolute; bottom: 0; right: -65%; }
+	header#pt-header.pt-header-style-2 .navbar-brand { padding: 20px 15px; line-height: normal; text-align: left; display: inline-block; width: auto; }
+}
+@media(max-width:479px) {
+	.pt-video-icon1 a{top: 65%; }
+	.pt-big-title .pt-big-title1 { font-size: 3em; }
+	.pt-heading-text .pt-heading-text1{ font-size: 16px; }
+	header#pt-header .pt-bottom-header .navbar { padding: 10px 0px 10px 0px; }
+	.pt-blog-col-3 .pt-blog-post .pt-blog-contain .pt-blog-title { font-size: 21px; }
+	.icon-box3.icon-box-icon-style-03 .icon-box-description1{ font-size: 12px;}
+	.pt-blog-post .pt-post-meta ul li { margin-right: 15px; }
+	.pt-process-title { font-size: 28px; }
+	.owl-carousel .pt-blog-post .pt-blog-contain .pt-blog-title { font-size: 14px; }
+	.pt-subscribe-from { position: relative; margin-top: 0; }
+	.pt-subscribe-block .pt-subscribe-details h6 { font-size: 20px; color: var(--white-color); line-height: 1; }
+	#pt-footer .pt-footer1 .footer-title { margin-top: 45px; }
+	.pt-footer2 { margin-top: 30px; }
+	#pt-footer .pt-copyright-footer { margin: 30px 0px; }
+	.pt-section-big-title { display: none; }
+	.form { margin-top: -10%; }
+	.image-box-content { margin-left: -100px; margin-top: 100px; }
+	.circle-progress .pt-circle-progress { padding: 30px 0px; }
+	.circle-progress .pt-circle-progress .pt-progress-count { top: 45%; }
+	.backgrount-image-right { display: none; }
+	.about-img-block .about-img-1 { display: none; }
+	.counter.single-counter { display: none; }
+	.pt-breadcrumb-title { font-size: 38px; }
+	.pt-section-title-box .pt-section-title { font-size: 21px; line-height: 1.5; }
+	.process-img { display: none; }
+	.pt-subscribe-block .pt-subscribe-img { display: none; }
+	.pt-subscribe-block .pt-subscribe-details { margin-left: 0; text-align: center; }
+	.pt-subscribe-from form input { text-align: center; }
+	.pt-subscribe-from form input[type="submit"] { position: relative; width: 100%; }
+}
