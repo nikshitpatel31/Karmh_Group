@@ -72,7 +72,7 @@ import Css
 @import url("all.min.css");
 @import url("flaticon/flaticon.css");
 @import url("ionicons.min.css");
-@import url("owl-carousel/owl.carousel.min.css");
+@import url("/owl.carousel.min.css");
 @import url("magnific-popup.min.css");
 @import url("animate.min.css");
 @import url("animate.css");
