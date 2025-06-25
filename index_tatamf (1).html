@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karmh Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-/1BWy6..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nikshitpatel31/Karmh_Group/testimonial_2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nikshitpatel31/Karmh_Group/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nikshitpatel31/Karmh_Group/ionicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN (no account needed) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nikshitpatel31/Karmh_Group@main/karmh_group.css" />
+</head>
+
+<body style="background: #000;">
+    <div class="preloader" id="preloader">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+            <path
+                d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+            </path>
+        </svg>
+        <div class="inner">
+            <canvas class="progress-bar" id="progress-bar" width="200" height="200"></canvas>
+            <figure>
+                <img src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/preloder.svg"
+                    alt="Image">
+
+            </figure>
+            <small>Loading</small>
+        </div>
+    </div>
+    <div class="pt-sidebar">
+        <div class="pt-close-btn">
+            <a class="pt-close" href="javascript:void(0)">
+                <i class="ion-close-round"></i>
+            </a>
+        </div>
+        <div class="pt-sidebar-block">
+            <!-- <div class="pt-sidebar-header">
+                <img src="images/logo.png" class="pt-sidebar-logo" alt="architeck-sidebar-logo">
+                <p>It is a long established fact that a reader of a page when looking at its layout. </p>
+            </div>
+            <div class="pt-sidebar-category">
+                <h5>Categories</h5>
+                <ul>
+                    <li><a href="#">Housing</a></li>
+                    <li><a href="#">Interior</a></li>
+                    <li><a href="#">Planning</a></li>
+                    <li><a href="#">Residential</a></li>
+                    <li><a href="#">Restoration</a></li>
+                </ul>
+            </div> -->
+            <div class="pt-sidebar-contact">
+                <h5>Contacts</h5>
+                <ul class="pt-sidebar-contact">
+                    <li>
+                        <i class="fa fa-map-marker"></i>
+                        <span>
+                            Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA </span>
+                    </li>
+                    <li>
+                        <a href="tel:99200 58499"><i class="fa fa-phone"></i>
+                            <span>99200 58499</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@peacefulthemes.com"><i
+                                class="fa fa-envelope"></i><span>info@peacefulthemes.com</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pt-sidebar-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header id="pt-header" class="pt-header-default ">
+        <div class="pt-top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 ">
+                        <div class="pt-header-social ">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 d-none d-md-inline-block">
+                        <div class="pt-header-contact text-right">
+                            <ul>
+                                <li>
+                                    <a href="tel:+1800001658"><i class="fas fa-phone"></i>
+                                        <span>+1800-001-658</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@peacefulthemes.com"><i
+                                            class="fas fa-envelope"></i><span>info@peacefulthemes.com</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="#home">
+                                <img class="img-fluid logo"
+                                    src="https://storage.karmagroup.com/assets/edm/karma-group/Karma-Diamond/Karma-Group.png"
+                                    alt="architeck">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pt-menu-contain" class="pt-menu-contain">
+                                    <ul id="pt-main-menu" class="navbar-nav ml-auto">
+                                        <li class="nav-item menu-item active">
+                                            <a href="#home" aria-current="page">Home</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#about_us">About Us</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#our_service">Our Services</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#projects">Our Projects</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#experience">Our Experience</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#testimonial">Testimonial</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#contact">Contact Us</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1 class="nl-font-heading" id="typewriter"></h1>
+                <p class="nl-font-body">Discover premium properties in the best locations. Buy, sell, or rent with ease
+                    and confidence.
+                </p>
+                <a routerLink="/products" class="cta-button">Explore Products</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/hero-banner.png"
+                    alt="Hardware Tools" />
+            </div>
+        </div>
+    </section>
+
+    <div class="nlv2_about section_bg nl-section-pb" id="about_us">
+        <div class="nlv2_about_wrapper">
+            <div class="container container-1290">
+                <div class="nlv2_about_wrapper_container">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-xl-5 col-xxl-5 col-md-6 col-sm-12 align-self-center has_fade_anim"
+                            data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                            <h6
+                                class="nl-fs-14 nl-font-body nl-lh-19 text-uppercase nl-color-brown nl-fw-500 nl-ls-1 text-center text-lg-start text-md-start has_fade_anim">
+                                About Us </h6>
+                            <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
+                                class="nl-fs-48 nl-font-heading nl-lh-62 nl-color-black m-auto text-center text-lg-start pb-15 text-md-start has_fade_anim">
+                                Your key to real estate success Turning </h2>
+                            <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+                                class="nl-fs-18 nl-font-body nl-lh-30 nl-color-gray-800 pb-1 has_fade_anim">
+                                Purus velit aenean quis habitant eros bibendum aenean quis habit aerosPurus velit aenean
+                                quis habitant eros </p>
+                            <div data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000"
+                                class="nlv2_about_icon_box d-flex align-items-center gap-2 has_fade_anim">
+                                <i aria-hidden="true" class="nl-color-brown nl-fs-16 fas fa-check-circle"></i> <span
+                                    class="nl-fs-18 nl-font-body nl-lh-30 nl-color-gray-800 text-center text-lg-start">
+                                    Turning Dreams into Addresses </span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
+                                class="nlv2_about_icon_box d-flex align-items-center gap-2 has_fade_anim">
+                                <i aria-hidden="true" class="nl-color-brown nl-fs-16 fas fa-check-circle"></i> <span
+                                    class="nl-fs-18 nl-font-body nl-lh-30 nl-color-gray-800 text-center text-lg-start">
+                                    Where Every Home Tells a Story </span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
+                                class="nlv2_about_icon_box d-flex align-items-center gap-2 has_fade_anim">
+                                <i aria-hidden="true" class="nl-color-brown nl-fs-16 fas fa-check-circle"></i> <span
+                                    class="nl-fs-18 nl-font-body nl-lh-30 nl-color-gray-800 text-center text-lg-start">
+                                    Your Key to Real Estate Success </span>
+                            </div>
+                            <div class="nl__section-button nl-about-button mt-40 has_fade_anim mt-4">
+                                <a href="#"
+                                    class="nl-fs-14 nl-fw-500 nl-lh-25 text-uppercase overflow-hidden d-inline-flex position-relative nl-color-black">
+                                    <span class="position-relative z-1">Send Now</span>
+                                    <span class="nl__btn-hover-style"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 col-xl-2 col-xxl-2 col-md-12 col-sm-12 d-none d-lg-block"></div>
+                        <div class="col-12 col-lg-5 col-xl-5 col-xxl-5 col-md-6 col-sm-12 nl-mobile-mt"
+                            data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                            <div class="nlv2_about-image position-relative has_fade_anim">
+                                <div class="image-hover">
+                                    <img decoding="async"
+                                        src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/Rectangle-1116.webp"
+                                        alt="" class="nl-border-radius-5 has_fade_anim">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="services-section nl-section-pb" id="our_service">
+        <div class="container text-center">
+            <h6 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
+                class="text-uppercase mb-2 nl-font-body" style="color: #b08a57; letter-spacing: 1px;">Our Services</h6>
+            <h2 data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000"
+                class="fw-bold display-6 mb-5 nl-font-heading">Experience the Best in Real Estate Design</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="service-card p-5 bg-white shadow-sm h-100">
+                        <div class="icon mb-3 text-warning fs-2">🏠</div>
+                        <h5 class="fw-bold nl-font-body">Warehouse Operation</h5>
+                        <p class="text-muted nl-font-body">Interior design involves the art and science of enhancing the
+                            interior of
+                            a space to achieve functionality and aesthetics.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="service-card p-5 bg-white shadow-sm h-100">
+                        <div class="icon mb-3 text-warning fs-2">📍</div>
+                        <h5 class="fw-bold nl-font-body">Cost Optimization</h5>
+                        <p class="text-muted nl-font-body">Interior design involves the art and science of enhancing the
+                            interior of
+                            a space to achieve functionality and aesthetics.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="service-card p-5 bg-white shadow-sm h-100">
+                        <div class="icon mb-3 text-warning fs-2">🏘️</div>
+                        <h5 class="fw-bold nl-font-body">Parkside Residential</h5>
+                        <p class="text-muted nl-font-body">Interior design involves the art and science of enhancing the
+                            interior of
+                            a space to achieve functionality and aesthetics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="features-section section_bg nl-section-pb" id="projects">
+        <h2 class="nl-font-heading pb-4">What You'll Get</h2>
+        <div class="card-carousel owl-carousel owl-theme">
+            <div class="item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card" data-title="Beautiful Interiors"
+                    data-image="https://images.unsplash.com/photo-1501183638710-841dd1904471"
+                    data-description="Elegant interior spaces with a blend of modern aesthetics and comfort.">
+                    <div class="card-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1501183638710-841dd1904471');">
+                    </div>
+                    <div class="card-overlay nl-font-body">
+                        <h3>Beautiful Interiors</h3>
+                        <p>Click to know more</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <div class="card" data-title="Parking and Shopping"
+                    data-image="https://images.unsplash.com/photo-1599423300746-b62533397364"
+                    data-description="Convenient and spacious parking with direct access to shopping centers.">
+                    <div class="card-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1599423300746-b62533397364');">
+                    </div>
+                    <div class="card-overlay nl-font-body">
+                        <h3>Parking and Shopping</h3>
+                        <p>Click to know more</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <div class="card" data-title="Parking and Shopping"
+                    data-image="https://images.unsplash.com/photo-1599423300746-b62533397364"
+                    data-description="Convenient and spacious parking with direct access to shopping centers.">
+                    <div class="card-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1599423300746-b62533397364');">
+                    </div>
+                    <div class="card-overlay nl-font-body">
+                        <h3>Parking and Shopping</h3>
+                        <p>Click to know more</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="card" data-title="Parking and Shopping"
+                    data-image="https://images.unsplash.com/photo-1599423300746-b62533397364"
+                    data-description="Convenient and spacious parking with direct access to shopping centers.">
+                    <div class="card-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1599423300746-b62533397364');">
+                    </div>
+                    <div class="card-overlay nl-font-body">
+                        <h3>Parking and Shopping</h3>
+                        <p>Click to know more</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat more cards as needed -->
+        </div>
+    </section>
+
+    <!-- Modal (same as before) -->
+    <div class="custom-modal nl-font-body" id="featureModal">
+        <div class="custom-modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+
+            <div class="modal-banner" id="modalImage"></div>
+
+            <div class="modal-body">
+                <h2 id="modalTitle">Title Here</h2>
+                <p id="modalDescription">Description here...</p>
+
+                <div class="modal-actions">
+                    <a href="#" class="modal-btn"><span>📄</span> View Brochure</a>
+                    <a href="#" class="modal-btn"><span>📝</span> Latest Prospects</a>
+                    <a href="#" class="modal-btn"><span>📐</span> Download Plans</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="Counter pt-bg-dark">
+        <div class="pt-bg-overley1 pt-opacity2"
+            style="background-image: url('https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/achieve_bg.png');">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-12 mb-xl-0  text-center">
+                    <div class="pt-counter-contain">
+                        <div class="pt-counter-img">
+                            <div class="pt-counter-media">
+                                <i class=" flaticon-008-factory"></i>
+                            </div>
+                        </div>
+                        <div class="pt-counter-info">
+                            <div class="nl-font-heading pt-counter-num-prefix">
+                                <h5 class="odometer" data-count="3200" data-speed="5000">3200</h5>
+                                <span class="pt-counter-prefix"></span>
+                            </div>
+                            <p class="nl-font-body pt-counter-description mb-0 text-white">Project Complated</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-xl-0  text-center">
+                    <div class="pt-counter-contain">
+                        <div class="pt-counter-img">
+                            <div class="pt-counter-media">
+                                <i class=" flaticon-009-crane"></i>
+                            </div>
+                        </div>
+                        <div class="pt-counter-info">
+                            <div class="nl-font-heading pt-counter-num-prefix">
+                                <h5 class="odometer" data-count="1500" data-speed="5000">5000</h5>
+                                <span class="pt-counter-prefix"></span>
+                            </div>
+                            <p class="nl-font-body pt-counter-description mb-0 text-white">Work Employed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-xl-0 text-center">
+                    <div class="pt-counter-contain">
+                        <div class="pt-counter-img">
+                            <div class="pt-counter-media">
+                                <i class=" flaticon-024-graphic-tool"></i>
+                            </div>
+                        </div>
+                        <div class="pt-counter-info">
+                            <div class="nl-font-heading pt-counter-num-prefix">
+                                <h5 class="odometer" data-count="1000" data-speed="5000">2500</h5>
+                                <span class="pt-counter-prefix"></span>
+                            </div>
+                            <p class="nl-font-body pt-counter-description mb-0 text-white">Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-xl-0  text-center">
+                    <div class="pt-counter-contain">
+                        <div class="pt-counter-img">
+                            <div class="pt-counter-media">
+                                <i class=" flaticon-026-settings-2"></i>
+                            </div>
+                        </div>
+                        <div class="pt-counter-info">
+                            <div class="nl-font-heading pt-counter-num-prefix">
+                                <h5 class="odometer" data-count="2200" data-speed="5000">2800</h5>
+                                <span class="pt-counter-prefix"></span>
+                            </div>
+                            <p class="nl-font-body pt-counter-description mb-0 text-white">Painting Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="nlv2_experiences nl-bg-color-gray-100 nl-section-pb" id="experience">
+        <div class="nlv2_experiences_wrapper">
+            <div class="container container-1290">
+                <div class="nlv2_experiences_wrapper_container position-relative">
+                    <div class="row">
+                        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
+                            class="col-12 col-lg-12 col-xl-5 col-xxl-5 col-md-12 col-sm-12 align-self-center">
+                            <div class="nlv2_experiences-bg-content">
+                                <img decoding="async"
+                                    src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/bg-building.webp"
+                                    alt="" class="has_char_anim about_img">
+                                <h6
+                                    class="nl-fs-14 nl-font-body nl-lh-19 text-uppercase nl-color-brown nl-fw-500 nl-ls-1 text-center text-lg-start text-md-start has_fade_anim">
+                                    Our Experience </h6>
+                                <h2
+                                    class="nl-fs-48 nl-font-heading nl-lh-62 nl-color-black m-auto text-center text-lg-start pb-15 pt-20 text-md-start has_fade_anim">
+                                    Your key to real estate success Turning Esate properties </h2>
+                                <p class="nl-fs-18 nl-font-body nl-lh-30 nl-color-gray-800 pb-1 has_fade_anim">
+                                    Outsourcing can provide corporate businesses with
+                                    several advantages, including cost savings, the access to specialized expertise,
+                                    increased efficiency, veral advantages, including cost savings, acces to specialized
+                                    expertise </p>
+                                <div class="nl__section-button nl-experiences-button mt-40 has_fade_anim">
+                                    <a href="#"
+                                        class="nl-fs-14 nl-fw-500 nl-lh-25 text-uppercase overflow-hidden d-inline-flex position-relative nl-color-black">
+                                        <span class="position-relative z-1">Send Now</span>
+                                        <span class="nl__btn-hover-style"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+                            class="col-12 col-lg-5 col-xl-1 col-xxl-1 col-md-12 col-sm-12 d-none d-lg-block"></div>
+                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+                            class="col-12 col-lg-12 col-xl-5 col-xxl-5 col-md-12 col-sm-12 nl-mobile-mt">
+                            <div class="row g-3">
+                                <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-sm-12">
+                                    <div class="nlv2_experiences-left position-relative">
+                                        <img decoding="async"
+                                            src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/bg-building.lf_.webp"
+                                            alt="" class="nl-border-radius-5 has_fade_anim">
+                                        <div
+                                            class="nlv2_experiences-left-box pt-10 pl-35 pb-10 pr-25 nl-bg-color-white d-inline-block nl-border-radius-5 d-flex gap-2 align-items-center has_fade_anim">
+                                            <div class="nlv2_experiences-left-box-top">
+                                                <img decoding="async"
+                                                    src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/client.webp"
+                                                    alt="" class="has_fade_anim">
+                                            </div>
+                                            <div class="nlv2_experiences-left-box-buttom pt-10" id="counterBox">
+                                                <h6 class="nl-fs-26 nl-lh-33 nl-font-heading nl-color-black">
+                                                    <span class="odometer" data-count="3000">0</span>+
+                                                </h6>
+                                                <p class="nl-fs-18 nl-lh-30 nl-font-body nl-color-gray-800">Satisfied
+                                                    Clients</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-sm-12">
+                                    <div class="nlv2_experiences-right">
+                                        <div
+                                            class="nlv2_experiences-right-box pt-10 pl-15 pb-10 pr-15 nl-bg-color-white d-inline-block nl-border-radius-5 mt-40 mb-20 has_fade_anim">
+                                            <div
+                                                class="nlv2_experiences-right-box-top d-flex gap-2 align-items-center nl-fs-40 nl-font-heading">
+                                                <i class="fas fa-briefcase me-2"></i>
+                                                <span class="odometer" data-count="10">0</span>+
+                                                </h6>
+                                            </div>
+                                            <div class="nlv2_experiences-right-box-buttom pt-10">
+                                                <p class="nl-fs-18 nl-lh-24 nl-font-body nl-color-gray-800 pl-10">
+                                                    Years Of Experiences </p>
+                                            </div>
+                                        </div>
+                                        <img decoding="async"
+                                            src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/bg-building-rt.webp"
+                                            alt="" class="nl-border-radius-5 has_fade_anim">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 col-xl-1 col-xxl-1 col-md-12 col-sm-12 d-none d-lg-block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonial pt-bg-light" id="testimonial">
+        <div class="pt-bg-overley pt-opacity1"
+            style="background-image: url('https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/testimonial_bg.png'); ">
+        </div>
+        <div class="container">
+            <div class=" row">
+                <div class="col-lg-6">
+                    <div class="pt-section-title-box">
+                        <span class="pt-section-sub-title nl-font-body">Our Clients Say</span>
+                        <h2 class="pt-section-title nl-font-heading">Clients Say About Us</h2>
+                        <p class="pt-section-description nl-font-body">There are many variations of passages of Lorem
+                            Ipsum
+                            available, but the majority have suffered alteration in some form, by injected humour
+                            randomised.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <div class=" row">
+                <div class="col-sm-12">
+                    <div class="pt-testimonial pt-testimonial-1">
+                        <div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="true"
+                            data-desk_num="2" data-lap_num="2" data-tab_num="1" data-mob_num="1" data-mob_sm="1"
+                            data-autoplay="true" data-loop="true" data-margin="45">
+                            <div class="item nl-font-body">
+                                <div class="pt-testimonial-box pt-testimonial-box-1">
+                                    <div class="pt-testimonial-img">
+                                        <img src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/testimonial_01.jpeg"
+                                            alt="testimonial-image">
+                                        <div class="pt-testimonial-meta">
+                                            <h5>Willie Rchitek</h5>
+                                            <p>Manager Peaceful</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-testimonial-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="pt-testimonial-content">
+                                        <div class="pt-quote">
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </div>
+                                        <p>Contrary to popular belief,Lorem Ipsum is not simply random text. It has
+                                            roots in a
+                                            piece
+                                            of classical Latin literature from 45 BC,making it over 2000 years old.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item nl-font-body">
+                                <div class="pt-testimonial-box pt-testimonial-box-1">
+                                    <div class="pt-testimonial-img">
+                                        <img src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/testimonial_02.jpeg"
+                                            alt="testimonial-image">
+                                        <div class="pt-testimonial-meta">
+                                            <h5>Maggie Architek</h5>
+                                            <p>Employee</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-testimonial-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="pt-testimonial-content">
+                                        <div class="pt-quote">
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </div>
+                                        <p>Contrary to popular belief,Lorem Ipsum is not simply random text. It has
+                                            roots in a
+                                            piece
+                                            of classical Latin literature from 45 BC,making it over 2000 years old.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item2 nl-font-body">
+                                <div class="pt-testimonial-box pt-testimonial-box-1">
+                                    <div class="pt-testimonial-img">
+                                        <img src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/testimonial_03.jpeg"
+                                            alt="testimonial-image">
+                                        <div class="pt-testimonial-meta">
+                                            <h5>Cindy Wilkins</h5>
+                                            <p>MD Peaceful</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-testimonial-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="pt-testimonial-content">
+                                        <div class="pt-quote">
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </div>
+                                        <p>Contrary to popular belief,Lorem Ipsum is not simply random text. It has
+                                            roots in a
+                                            piece
+                                            of classical Latin literature from 45 BC,making it over 2000 years old.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item3 nl-font-body">
+                                <div class="pt-testimonial-box pt-testimonial-box-1">
+                                    <div class="pt-testimonial-img">
+                                        <img src="https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/testimonial_04.jpeg"
+                                            alt="testimonial-image">
+                                        <div class="pt-testimonial-meta">
+                                            <h5>Emily Blunts</h5>
+                                            <p>CEO Peaceful</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-testimonial-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="pt-testimonial-content">
+                                        <div class="pt-quote">
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </div>
+                                        <p>Contrary to popular belief,Lorem Ipsum is not simply random text. It has
+                                            roots in a piece of classical Latin literature from 45 BC,making it over
+                                            2000 years old.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lead-form-section" id="contact">
+        <div class="form-overlay">
+            <div class="form-left">
+                <h1 class="nl-font-heading" style="color: #fff;">Get Expert Consultation</h1>
+                <!-- <p class="nl-font-body">
+                    Navigating the world of real estate can be complex, but you don't have to do it alone.
+                    Our team of seasoned professionals is here to provide you with personalized insights and expert
+                    advice tailored to your unique needs.
+                    Whether you're selling, buying, or investing, we ensure you make informed decisions every step of
+                    the way.
+                </p> -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps?q=3107+Peachtree+Road,+Atlanta,+GA,+30305&output=embed"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- <p><strong>Address:</strong> 3107 Peachtree Road, Atlanta, GA, 30305</p>
+                <p><strong>Email:</strong> lisa.watt@compass.com</p>
+                <p><strong>Phone:</strong> (404) 988-2233</p>
+                <p><strong>Fax:</strong> (404) 988-2233</p> -->
+            </div>
+            <div class="form-right">
+                <form action="https://formsubmit.co/nikshit.patel@gmail.com" method="POST">
+                    <div class="input-row">
+                        <input type="text" name="firstName" placeholder="First Name" required />
+                        <input type="text" name="lastName" placeholder="Last Name" required />
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone" required />
+                    <input type="email" name="email" placeholder="Email" />
+                    <textarea name="message" placeholder="How can we help you?"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <!-- About -->
+            <div class="footer-column" style="margin-right: 140px;">
+                <h4>About</h4>
+                <p>Lisa & Company – Real Estate Experts helping you find the perfect property tailored to your needs.
+                </p>
+                <p><i class="fas fa-map-marker-alt"></i> 3107 Peachtree Road, Atlanta, GA 30305</p>
+                <p><i class="fas fa-envelope"></i> lisa.watt@compass.com</p>
+                <p><i class="fas fa-phone-alt"></i> 99200 58499</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <div class="quick-links-grid">
+                    <ul>
+                        <li><a href="#home" aria-current="page">Home</a></li>
+                        <li><a href="#about_us">About Us</a></li>
+                        <li><a href="#our_service">Our Services</a></li>
+                        <li><a href="#projects">Our Projects</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#experience">Our Experience</a></li>
+                        <li><a href="#testimonial">Testimonial</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-column" style="min-width: 100px; flex: 1;">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Lisa & Company. All rights reserved.
+        </div>
+    </footer>
+
+
+
+    <!-- Fixed Buttons -->
+    <div class="fixed-buttons">
+        <a href="https://wa.me/14049882233" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+14049882233" class="call-btn" title="Call Now">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- FontAwesome for icons -->
+
+
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/nikshitpatel31/Karmh_Group/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/nikshitpatel31/Karmh_Group@main/karmh_group.js"></script>
+
+
+
+
+
+</html>
