@@ -542,7 +542,12 @@ span.nl__btn-hover-style {
 }
 
 .nl-fs-48 {
-    font-size: 48px;
+    font-size: 38px;
+}
+
+.pt-section-title-box .pt-section-title {
+    font-size: 38px !important;
+    line-height: 1.5;
 }
 
 .nl-lh-62 {
@@ -1234,7 +1239,7 @@ span.nl__btn-hover-style {
 
 .nl-section-pb,
 .pb-120 {
-    padding-bottom: 120px
+    padding-bottom: 60px
 }
 
 .nl-pb-5 {
@@ -1814,6 +1819,9 @@ span.nl__btn-hover-style {
     }
 }
 
+.testimonial {
+    padding: 60px 0px !important;
+}
 @media (max-width: 576px) {
     .nl-section-pt {
         padding-top: 80px;
