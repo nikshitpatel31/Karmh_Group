@@ -2342,7 +2342,12 @@
             .modal-body,
             .modal-banner {
                 width: 100%;
+                min-height: 260px
                 min-width: 100%;
+            }
+
+        .modal-body h2 {
+                font-size: 24px
             }
 
             .modal-body {
