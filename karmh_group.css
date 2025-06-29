@@ -73,7 +73,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/hero-banner.png');
+            background-image: url('https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/homepage_banner.jpg');
             background-size: cover;
             background-position: center;
             filter: blur(8px);
@@ -2187,68 +2187,65 @@
 
         /* Modal styles remain the same */
         /* Overlay */
+        /* Main Modal */
         .custom-modal {
             position: fixed;
             inset: 0;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.6);
             display: none;
             align-items: center;
             justify-content: center;
             z-index: 1000;
+            backdrop-filter: blur(4px);
         }
 
-        /* Modal box */
         .custom-modal-content {
-            width: 90%;
-            max-width: 800px;
-            background: #fff;
-            border-radius: 16px;
+            width: 92%;
+            max-width: 900px;
+            background: white;
+            border-radius: 20px;
             overflow: hidden;
-            animation: slideUp 0.4s ease;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            position: relative;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+            transform: scale(0.95);
+            opacity: 0;
+            animation: modalFadeIn 0.4s ease forwards;
         }
 
-        @keyframes slideUp {
-            from {
-                transform: translateY(60px);
-                opacity: 0;
-            }
-
+        @keyframes modalFadeIn {
             to {
-                transform: translateY(0);
+                transform: scale(1);
                 opacity: 1;
             }
         }
 
-        /* Banner Image */
-        .modal-banner {
-            height: 250px;
-            background-size: cover;
-            background-position: center;
+        .modal-inner {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
-        /* Modal body */
+        /* Left: Content */
         .modal-body {
-            padding: 30px 25px;
-            background-image: url('https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/pattern-dot.png');
-            background-repeat: repeat;
-            background-size: inherit;
+            flex: 1;
+            padding: 40px 30px;
+            background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
+            min-width: 300px;
         }
 
         .modal-body h2 {
-            margin-bottom: 10px;
-            font-size: 26px;
+            font-size: 28px;
+            text-transform: capitalize;
+            color: #152238;
+            margin-bottom: 15px;
         }
 
         .modal-body p {
+            font-size: 17px;
             color: #555;
-            margin-bottom: 25px;
-            line-height: 1.6;
-            font-size: 19px;
+            margin-bottom: 30px;
+            line-height: 1.7;
         }
 
-        /* Buttons */
         .modal-actions {
             display: flex;
             flex-wrap: wrap;
@@ -2257,38 +2254,105 @@
 
         .modal-btn {
             background: #a08145;
-            color: white;
+            color: #fff;
             text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            transition: background 0.3s ease;
+            gap: 10px;
+            box-shadow: 0 8px 20px rgba(160, 129, 69, 0.3);
+            transition: all 0.3s ease;
+            font-size: 16px;
         }
 
         .modal-btn:hover {
-            /* background: #003366; */
-            background: var(--nl-color-brown);
-            color: #fcfafa;
+            background: #8a6a3d;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(160, 129, 69, 0.5);
         }
 
-        /* Close button */
+        /* Right: Image */
+        .modal-banner {
+            flex: 1;
+            min-height: 320px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-width: 300px;
+        }
+
+        .custom-modal.show {
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .nlv2_about_wrapper_container p {
+            margin-bottom: 10px;
+        }
+
+        .modal-body h2 {
+            color: #b08a57;
+            /* Brown title */
+        }
+
+        .modal-body p {
+            color: #6c757d;
+            /* Slightly darker brown for paragraph text, optional */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Close Button */
         .modal-close {
             position: absolute;
             top: 15px;
+            line-height: 0.7;
             right: 20px;
-            background: transparent;
+            /* height: 40px; */
+            padding: 5px;
+            border-radius: 5px;
+            background: #fff;
             border: none;
-            font-size: 30px;
+            font-size: 36px;
             color: #333;
             cursor: pointer;
-            transition: transform 0.2s;
+            transition: transform 0.3s ease, color 0.3s ease;
         }
 
         .modal-close:hover {
             transform: scale(1.2);
+            color: #a08145;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .modal-inner {
+                flex-direction: column-reverse;
+            }
+
+            .modal-body,
+            .modal-banner {
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .modal-body {
+                padding: 25px 20px;
+            }
+
+            .modal-btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
 
 
@@ -2643,4 +2707,251 @@
 
         .social-icons {
             color: #fff;
+        }
+
+        .associate-partner-section {
+            padding: 80px 20px;
+            background: #f7f7f7;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 50px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 60px;
+            background: #c59d5f;
+            margin: 10px auto 0;
+            border-radius: 3px;
+        }
+
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .partner-logo {
+            width: 270px;
+            height: auto;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: grayscale(100%);
+            justify-content: center;
+            display: flex;
+            border: 2px solid #f4f4;
+        }
+
+        .partner-logo img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .partner-logo:hover {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+            border: 2px solid #f4f4;
+        }
+
+        @media (max-width: 768px) {
+            .partner-logos {
+                /* flex-direction: column; */
+                gap: 30px;
+            }
+        }
+
+        .project-section {
+            padding: 60px 20px;
+            background: #f5f5f5;
+            text-align: center;
+            /* font-family: 'Arial', sans-serif; */
+        }
+
+        .project-container {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project-sidebar {
+            width: 100%;
+            max-width: 250px;
+            height: 240px;
+            background: linear-gradient(145deg, #86a4d5, #002156);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #technical .project-card {
+            cursor: default;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        #technical .project-card:hover {
+            transform: scale(1.02);
+        }
+
+        #technical .project-card {
+            cursor: default;
+        }
+
+
+        #technical img {
+            pointer-events: none;
+            user-select: none;
+        }
+
+
+        .tab-button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            background: #fff;
+            color: #000;
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            /* font-size: 18px; */
+            transition: 0.3s;
+        }
+
+        .tab-button.active {
+            background: #b99755;
+            color: #fff;
+        }
+
+        #technical .project-card {
+            cursor: default;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .project-content {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+
+
+        .project-card {
+            background: #f0f0f0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        /* Card hover effect */
+        .project-card:hover {
+            transform: scale(1.03);
+        }
+
+        /* Project image */
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Project name */
+        .project-name {
+            padding: 10px;
+            font-weight: bold;
+            background: #f0f0f0;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        /* Responsive Grid Breakpoints */
+        @media (min-width: 768px) {
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .projects {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* 🔒 Default: hide button everywhere */
+        .view-all-btn {
+            display: none;
+        }
+
+        /* Default: hide all after 8th */
+        #completed .project-card:nth-child(n+9) {
+            display: none;
+        }
+
+        #completed.show-all .project-card {
+            display: block !important;
+        }
+
+        /* Stylish Button (visible everywhere by default) */
+        .view-all-btn {
+            display: block;
+            margin: 20px auto 0;
+            padding: 12px 10px;
+            font-size: 16px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #004aad, #00b4d8);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            width: 200px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .view-all-btn:hover {
+            background: linear-gradient(135deg, #003f8a, #009ec9);
+            transform: scale(1.03);
+        }
+
+        /* On click: hide the button */
+        #completed.show-all .view-all-btn {
+            display: none;
+        }
+
+        /* Mobile-specific: hide after 4th instead of 8th */
+        @media (max-width: 768px) {
+            #completed .project-card:nth-child(n+5) {
+                display: none;
+            }
+        }
+
+        .hidden {
+            display: none;
         }
