@@ -2729,7 +2729,7 @@ button:hover {
 }
 
 .form-left h2 {
-    font-size: 2.52em;
+    font-size: 2.52em !important;
 }
 
 .section-title {
