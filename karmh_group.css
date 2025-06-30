@@ -2728,6 +2728,10 @@ button:hover {
     text-align: center;
 }
 
+.form-left h2 {
+    font-size: 2.52em;
+}
+
 .section-title {
     font-size: 32px;
     font-weight: 600;
