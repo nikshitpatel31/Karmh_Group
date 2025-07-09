@@ -6,6 +6,51 @@ document.onkeydown = function (e) {
         return false;
     }
 }
+
+// const items = document.querySelectorAll('.faq-item');
+
+// items.forEach(item => {
+//   const question = item.querySelector('.faq-question');
+//   const answer = item.querySelector('.faq-answer');
+//   const plus = item.querySelector('.plus');
+
+//   question.addEventListener('click', () => {
+//     const isOpen = answer.style.display === 'block';
+
+//     // Close all other answers
+//     items.forEach(i => {
+//       i.querySelector('.faq-answer').style.display = 'none';
+//       i.querySelector('.plus').textContent = '+';
+//     });
+
+//     // Toggle current
+//     if (!isOpen) {
+//       answer.style.display = 'block';
+//       plus.textContent = '−';
+//     } else {
+//       answer.style.display = 'none';
+//       plus.textContent = '+';
+//     }
+//   });
+// });
+
+document.querySelectorAll('.faq-item').forEach(item => {
+    const question = item.querySelector('.faq-question');
+  
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+  
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+  
+      // Open clicked if it wasn't already open
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    });
+  });
+  
+
 document.querySelectorAll('.tab-button').forEach(button => {
     button.addEventListener('click', () => {
         document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
