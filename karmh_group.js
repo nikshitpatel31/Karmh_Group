@@ -7,6 +7,24 @@ document.onkeydown = function (e) {
     }
 }
 
+let hasScrolled = false;
+
+function openForm() {
+    document.getElementById("popupForm").style.display = "flex";
+}
+
+function closeForm() {
+    document.getElementById("popupForm").style.display = "none";
+}
+
+// Show popup on first scroll
+window.addEventListener('scroll', () => {
+    if (!hasScrolled) {
+        hasScrolled = true;
+        openForm();
+    }
+});
+
 // const items = document.querySelectorAll('.faq-item');
 
 // items.forEach(item => {
