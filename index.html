@@ -995,8 +995,11 @@
                     <div class="input-row">
                         <input type="text" name="Name of Society" placeholder="Name of Society" required />
                     </div>
-                    <input type="tel" name="Name of Secretary/Chairman/Treasurer" placeholder="Name of Secretary/Chairman/Treasurer" />
-                    <input type="tel" name="Mobile Number" placeholder="Mobile Number" />
+                    <input type="tel" name="Name of Secretary/Chairman/Treasurer"
+                        placeholder="Name of Secretary/Chairman/Treasurer" />
+                    <input type="tel" id="number" name="number" pattern="[0-9]{10}" required
+                    placeholder="10-digit mobile number" />
+                    
                     <textarea name="Address" placeholder="Address"></textarea>
                     <button type="submit">Submit</button>
                 </form>
@@ -1022,17 +1025,18 @@
                             <input type="text" id="society" name="society" required />
                         </div>
                         <div class="field">
-                            <label for="Name of Secretary/Chairman/Treasurer">Name of Secretary/Chairman/Treasurer</label>
+                            <label for="Name of Secretary/Chairman/Treasurer">Name of
+                                Secretary/Chairman/Treasurer</label>
                             <input type="text" id="contactPerson" name="contactPerson" required />
                         </div>
                     </div>
 
-                    <label for="address">Address</label>
-                    <textarea id="address" name="address" rows="2" required></textarea>
-
                     <label for="contact number">Mobile Number</label>
                     <input type="tel" id="number" name="number" pattern="[0-9]{10}" required
                         placeholder="10-digit mobile number" />
+
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="2" required></textarea>
 
                     <button type="submit">Submit</button>
                 </form>
