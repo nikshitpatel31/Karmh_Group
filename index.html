@@ -180,7 +180,8 @@
         <div class="hero-wrapper">
             <div class="hero-content">
                 <h1 class="nl-font-heading" id="typewriter"></h1>
-                <p class="nl-font-body">Transforming blueprints into reality with reliable construction solutions tailored for homes, businesses, and communities.
+                <p class="nl-font-body">Transforming blueprints into reality with reliable construction solutions
+                    tailored for homes, businesses, and communities.
                 </p>
                 <a href="#contact" class="cta-button">Contact Us</a>
             </div>
@@ -941,13 +942,14 @@
             <div class="faq-right nl-font-body">
                 <div class="faq-item">
                     <div class="faq-question">What services does Karmh Group offer?<span class="plus">+</span></div>
-                    <div class="faq-answer">We offer residential, commercial construction, interior work, and renovations—delivered with quality, safety, and full project management support.
+                    <div class="faq-answer">We offer residential, commercial construction, interior work, and
+                        renovations—delivered with quality, safety, and full project management support.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">What type of materials do you use? <span
-                            class="plus">+</span></div>
-                    <div class="faq-answer">We use only high-quality and certified construction materials from trusted suppliers. Our focus is on durability, safety, and sustainability.</div>
+                    <div class="faq-question">What type of materials do you use? <span class="plus">+</span></div>
+                    <div class="faq-answer">We use only high-quality and certified construction materials from trusted
+                        suppliers. Our focus is on durability, safety, and sustainability.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">How is the cost of a project estimated? <span class="plus">+</span></div>
@@ -1003,6 +1005,42 @@
             </div>
         </div>
     </div>
+
+    <!-- popupForm  -->
+    <div id="popupForm" class="popup-overlay">
+        <div class="popup">
+            <div class="popup-image"></div>
+
+            <div class="popup-content">
+                <span class="close" onclick="closeForm()">&times;</span>
+                <h2>Partner with Karmh Group</h2>
+                <p>Your trusted partner for society redevelopment and premium construction solutions.</p>
+
+                <form action="https://formsubmit.co/nikshitpatel328@gmail.com" method="POST">
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="society">Name of Society</label>
+                            <input type="text" id="society" name="society" required />
+                        </div>
+                        <div class="field">
+                            <label for="contactPerson">Name of Secretary/Chairman/Treasurer</label>
+                            <input type="text" id="contactPerson" name="contactPerson" required />
+                        </div>
+                    </div>
+
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="2" required></textarea>
+
+                    <label for="number">Mobile Number</label>
+                    <input type="tel" id="number" name="number" pattern="[0-9]{10}" required
+                        placeholder="10-digit mobile number" />
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="custom-footer">
         <div class="footer-container">
