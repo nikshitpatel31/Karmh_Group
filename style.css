@@ -3080,4 +3080,163 @@ button:hover {
       font-size: 16px;
     }
   }
+
+    /* Popup Overlay */
+    .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        animation: fadeIn 0.5s ease;
+    }
+
+    /* Popup Container */
+    .popup {
+        display: flex;
+        flex-direction: row;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        width: 95%;
+        max-width: 800px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        animation: slideUp 0.4s ease;
+        position: relative;
+    }
+
+    /* Image Section */
+    .popup-image {
+        width: 40%;
+        background: url('https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/pop_form_bg.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    /* Form Section */
+    .popup-content {
+        padding: 30px;
+        width: 60%;
+    }
+
+    .popup-content h2 {
+        margin-top: 0;
+        color: #2a5298;
+        font-size: 24px;
+    }
+
+    .popup-content p {
+        color: #555;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .form-row .field {
+        flex: 1;
+        min-width: 240px;
+    }
+
+    label {
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: block;
+        color: #333;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    /* button[type="submit"] {
+        margin-top: 15px;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        padding: 12px;
+        font-size: 15px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background: linear-gradient(135deg, #163665, #2b4a91);
+    } */
+
+    /* Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 24px;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #d7d7d7;
+        color: #000;
+        cursor: pointer;
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(40px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        to {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .popup {
+            flex-direction: column;
+        }
+
+        .popup-image {
+            background-image: url('https://raw.githubusercontent.com/nikshitpatel31/Karmh_Group/refs/heads/main/pop_form_mobile_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            /* Adjust height as needed */
+            width: 100%;
+        }
+
+        .popup-content {
+            width: 100%;
+        }
+    }
   
