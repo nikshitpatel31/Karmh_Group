@@ -2488,7 +2488,7 @@ header#pt-header .pt-bottom-header .navbar .navbar-brand img {
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
 }
 
 .input-group {
@@ -3185,7 +3185,7 @@ button:hover {
     /* Close Button */
     .close {
         position: absolute;
-        top: 15px;
+        top: 25px;
         right: 20px;
         font-size: 24px;
         border-radius: 50%;
